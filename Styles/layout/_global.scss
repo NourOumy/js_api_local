@@ -1,19 +1,23 @@
-//• & = prent le meme 'nom' que le parent. ici & = a
+.membres{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    .membresImg{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 5px;
+    }
+    .membreDetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-// a{
-//   &:hover{    
-//   }
-// }
-
-//• lighten et darken + amount of it to change
-
-// body{
-//   background: lighten($color: $main-color, $amount: 10%);
-//   background: lighten($main-color, 10%);
-// }
-
-
-
+    }
+    img{
+        width: 100px;
+        aspect-ratio: 1/1;
+    }
+}
 
 
 
