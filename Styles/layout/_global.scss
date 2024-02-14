@@ -1,10 +1,44 @@
+body{
+    margin: 0 auto;
+    text-align: center;
+    header{
+        img{
+            width: 400px;
+            
+        }
+    }
+}
+
+.wrapper{
+    width: 900px;
+    margin: 0 auto;
+    h4{
+        color: palevioletred;
+        font-size: 40px;
+    }
+    p{
+        text-align: left;
+        color: gray;
+    }
+}
 .membres{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    img{
+        border-radius: 10px;
+    }
     .membresImg{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap: 5px;
+        cursor: pointer;
+        transition: .05s all ease-in-out;
+        img{
+           &:hover{
+            transform: scale(1.2);
+        } 
+        }
+        
     }
     .membreDetails{
         display: flex;
